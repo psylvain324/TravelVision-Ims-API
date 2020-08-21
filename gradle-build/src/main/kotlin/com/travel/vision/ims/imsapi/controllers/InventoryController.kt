@@ -11,8 +11,8 @@ import java.util.*
 @RestController
 @RequestMapping("/inventory")
 //@ExposesResourceFor(Inventory::class)
-class InventoryController @Autowired constructor(
-        private val inventoryService: InventoryService
+class InventoryController constructor(
+        @Autowired private val inventoryService: InventoryService
 ) {
     /*
     @GetMapping("/{warehouse}", produces = [MediaTypes.HAL_JSON_VALUE])
