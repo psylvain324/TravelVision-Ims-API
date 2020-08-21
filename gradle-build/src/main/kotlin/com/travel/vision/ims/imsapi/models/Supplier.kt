@@ -6,13 +6,13 @@ import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
 
-@Document("Warehouse")
-data class Warehouse(
+@Document("Supplier")
+data class Supplier(
         @Id @GeneratedValue(strategy = GenerationType.AUTO)
         val id: Long = 0,
 
         @Indexed
-        val warehouseName: String,
+        val supplierName: String,
 
         val location: String
 )
